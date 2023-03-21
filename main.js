@@ -26,7 +26,6 @@ function init() {
   initValidatePhone();
 }
 
-window.addEventListener("DOMContentLoaded", (event) => {
-  console.log("DOM fully loaded and parsed");
-  init();
-});
+if (document.readyState === 'complete' ) {
+    init();
+}
