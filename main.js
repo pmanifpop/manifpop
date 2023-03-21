@@ -26,6 +26,6 @@ function init() {
   initValidatePhone();
 }
 
-if (document.readyState === 'complete' ) {
-    init();
-}
+$(document).ready(function(){
+  init();
+})
