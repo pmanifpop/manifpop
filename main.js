@@ -25,6 +25,9 @@ function init() {
   initValidatePhone();
 }
 
-$(document).ready(function(){
+console.log('file loaded')
+
+document.addEveneListener('page:loaded', function() {
+  console.log('page:loaded')
   init();
 })
